@@ -1,0 +1,33 @@
+.navbar{
+    background-color: rgb(255, 255, 255, 0.5);
+    width: 100vw; /* Limita el tamaño máximo al ancho de la ventana */
+    height: 70px;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 200px;
+    padding: 10px;
+}
+
+.contact-button{
+    background-color: rgb(255, 255, 255, 0.8);
+    color: #4e6194;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 50px;
+    border:#4e6194 1px solid;
+    height: 50px;
+    font-size: 1.1em;
+}
+
+.contact-button:hover{
+    background-color: #4e6194;
+    color: white;
+}

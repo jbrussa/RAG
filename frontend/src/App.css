@@ -1,0 +1,47 @@
+/* Reseteo global */
+* {
+  box-sizing: border-box; /* Incluye padding y border en el ancho */
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; /* Evita el desbordamiento horizontal */
+}
+
+.container{
+  width: 100%;
+  height: 630px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input{
+  width: 50%;
+  height: 3.5rem;
+  margin: 1.4rem;
+  margin-top: 2rem;
+  border-radius: 8px;
+  border:#4e6194 3px solid;
+  padding-left: 10px;
+
+}
+
+.input:hover{
+  border:#9dabd4 3px solid; 
+}
+
+.input:focus{
+  outline: none; /* Quita el contorno negro */
+  border:#9dabd4 3px solid; 
+}
+
+input::placeholder {
+  color: gray; /* Color del texto */
+  font-size: 14px; /* Cambia el tamaño de la letra */
+}
