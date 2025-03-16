@@ -1,0 +1,12 @@
+.chat {
+  width: 50%;
+  height: 660px;
+  margin-top: 50px;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-y: auto; /* Agrega un scrollbar si hay más mensajes */
+  scroll-behavior: smooth; /* Esto hace que el desplazamiento sea suave */
+}

@@ -3,16 +3,17 @@
   box-sizing: border-box; /* Incluye padding y border en el ancho */
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   width: 100%;
   overflow-x: hidden; /* Evita el desbordamiento horizontal */
 }
 
-.container{
+.container {
   width: 100%;
-  height: 630px;
+  height: 750px;
   margin: 0 auto;
   padding: 0 1rem;
   display: flex;
@@ -21,27 +22,27 @@ html, body {
   align-items: center;
 }
 
-.input{
+.input {
   width: 50%;
   height: 3.5rem;
-  margin: 1.4rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
   border-radius: 8px;
-  border:#4e6194 3px solid;
+  border: #4e6194 3px solid;
   padding-left: 10px;
-
+  font-family: "Sora", sans-serif;
 }
 
-.input:hover{
-  border:#9dabd4 3px solid; 
+.input:hover {
+  border: #9dabd4 3px solid;
 }
 
-.input:focus{
+.input:focus {
   outline: none; /* Quita el contorno negro */
-  border:#9dabd4 3px solid; 
+  border: #9dabd4 3px solid;
 }
 
 input::placeholder {
   color: gray; /* Color del texto */
   font-size: 14px; /* Cambia el tamaño de la letra */
+  font-family: "Sora", sans-serif;
 }

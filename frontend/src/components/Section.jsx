@@ -1,16 +1,14 @@
-import React from 'react'
-import background from '../assets/background.mp4'
-import '../styles/Section.css'
+import React from "react";
+import background from "../assets/background.mp4";
+import "../styles/Section.css";
 
-const Section = ({children}) => {
+const Section = ({ children }) => {
   return (
     <div className="section">
-      <video src={background} autoPlay loop muted className="video"/>
-      <div className="content">
-      {children}
+      <video src={background} autoPlay loop muted className="video" />
+      <div className="content">{children}</div>
     </div>
-    </div>
-  )
-}
+  );
+};
 
-export default Section
+export default Section;

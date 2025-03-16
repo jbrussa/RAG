@@ -2,7 +2,6 @@
 
 Proyecto de construcción de sitos utilizando RAG.
 
-
 ## Backend
 
 ### Requisitos:
@@ -12,7 +11,7 @@ Proyecto de construcción de sitos utilizando RAG.
 
 ```
 cd [carpeta del proyecto]
-python3.10 -m venv venv
+python -m venv venv
 ```
 
 ### Activar entorno
@@ -38,17 +37,22 @@ pip install -r requirements.txt
 
 ### Para ejecutar
 
-
 - Si se ejecuta por primera vez, primero correr el archivo sample_load_files.py con el siguiente comando
+
 ```
-pip install -r requirements.txt
+python sample_load_files.py
+```
+
+también se debe instalar fastapi
+
+```
+pip install "fastapi[all]
 ```
 
 - Para ejecutar el backend, se utiliza el siguiente comando
+
 ```
 fastapi dev app.py
 ```
 
-
 ## Frontend
-

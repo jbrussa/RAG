@@ -1,19 +1,17 @@
-
-.section{
-    width: 100%;
-    height: 100vh;
-    position: relative; /* Permite posicionar elementos hijos absolutamente */
-
+.section {
+  width: 100%;
+  height: 100vh;
+  position: relative; /* Permite posicionar elementos hijos absolutamente */
 }
 
-video{
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
+video {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
 }
 
-.content{
-    position: absolute;
-    top: 0;
-    left: 0;
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
 }

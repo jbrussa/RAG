@@ -4,6 +4,7 @@ from classes.BOT2 import BOT2
 from classes.service import Service
 import uuid             #Nos permite crear un identificador único a nivel global
 from fastapi.middleware.cors import CORSMiddleware
+from pydantic import BaseModel
 
 #activar entorno virtual .\venv\Scripts\activate
 #ejecutar con fastapi dev app.py
@@ -15,6 +16,12 @@ app = FastAPI()
 bot2 = BOT2()
 #dbm es una instancia de Service2
 dbm = Service()
+
+# definir el JSON que recibe /message
+class MessageRequest(BaseModel):
+    query: str  
+
+
 
 #  Crear abla Sesiones si no existe
 dbm.create_table_sessions()
@@ -62,7 +69,13 @@ async def register_session(request: Request) -> dict[str, str]:
 
 
 @app.post("/message")
-async def manage_query(query: str, request: Request) -> str:
+async def manage_query(request: Request, message_request: MessageRequest) -> str:
+
+    # Pasar a str el JSON
+    try:
+        query = message_request.query
+    except Exception as e:
+        raise HTTPException(status_code=422, detail=f"Error en la validación de los datos: {str(e)}")
 
     # Recuperar id de sesión
     session_id = request.headers.get("id")
