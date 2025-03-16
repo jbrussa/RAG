@@ -2,6 +2,8 @@
 
 Proyecto de construcción de sitos utilizando RAG.
 
+![Descripción del GIF](./frontend/src/assets/ragsite.gif)
+
 ## Backend
 
 ### Requisitos:
@@ -56,3 +58,17 @@ fastapi dev app.py
 ```
 
 ## Frontend
+
+### Instalar librerias
+
+- Ejecutar el siguiente comando para instalar dependencias
+
+```
+npm i
+```
+
+- Para levantar el frontend con el siguiente comando
+
+```
+npm run start
+```
